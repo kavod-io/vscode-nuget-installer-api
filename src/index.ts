@@ -87,3 +87,20 @@ export interface RemovePackagesCommand {
   projects: Project[];
   packageId: string;
 }
+
+/**
+ * The handler interface for this extension to manage Nuget packages.
+ */
+export interface ProjectHandler {
+  loadProjects: () => Promise<Project[]>;
+  addPackage: (message: AddPackagesCommand) => Promise<void>;
+  removePackage: (message: RemovePackagesCommand) => Promise<void>;
+  dispose: () => void;
+}
+
+/**
+ * The interface that @kavod-io/vscode-nuget-installer-api exposes
+ */
+export interface NugetInstallerExtension {
+  registerProjectHandler: (handler: ProjectHandler) => void;
+}
