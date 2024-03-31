@@ -1,0 +1,24 @@
+{
+  "name": "vscode-nuget-installer-api",
+  "version": "0.0.0",
+  "description": "Contracts for VS Code Nuget Installer",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavod-io/vscode-nuget-installer-api.git"
+  },
+  "author": "Ross Knudsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kavod-io/vscode-nuget-installer-api/issues"
+  },
+  "homepage": "https://github.com/kavod-io/vscode-nuget-installer-api#readme",
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.4.3"
+  }
+}
