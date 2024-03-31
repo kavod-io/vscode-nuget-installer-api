@@ -1,5 +1,5 @@
 {
-  "name": "vscode-nuget-installer-api",
+  "name": "@kavod-io/vscode-nuget-installer-api",
   "version": "1.0.0",
   "description": "Contracts for VS Code Nuget Installer",
   "main": "out/index.js",
